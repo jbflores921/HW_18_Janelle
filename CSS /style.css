@@ -23,15 +23,18 @@ li {
   }
 
   .heroimg {
-    height: 600 px ;
-    padding: 25 px;
+        margin-left: 450px;
+        width: 75%;
 
   }
   .content {
       width: 60% ;
       margin: 0 auto;
+      font-family: 'Otomanopee One', sans-serif;  
     
+      
   }
+
 
   footer {
       background-image: linear-gradient(180deg, rgba(115, 131, 211, 1), rgba(115, 131, 211, 0));
@@ -40,4 +43,63 @@ li {
   nav {
       width: 100% ;
    
+  }
+  h1 {
+    text-align: center;
+  }
+  
+  .workGrid{
+      display:grid;
+      grid-template-columns: 500px;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+      "boxOne"
+      "boxTwo"
+      "boxThree";
+  }
+   #boxOne{
+       grid-area: boxOne;
+       margin-left: 15%;
+    
+   }
+   #boxTwo{
+       grid-area: boxTwo;
+       margin-left: 15%;
+   }     
+   #boxThree{
+       grid-area: boxThree;
+       margin-left: 15px;
+   }
+
+  .flexContainer {
+      display: flex;
+      width: auto;
+  }
+  #skillSet {
+      padding-right: 5%;
+      padding-left: 5%
+  }
+
+  #infoOne{
+      padding-right: 5%
+  }
+
+    
+  
+
+
+
+  @media only screen and (max-width:600px){
+.flexContainer {
+    display:columns;
+    width:100%;
+}
+.workGrid{
+grid-template-rows: 300px 300px 300px;
+grid-template-columns: 1fr;
+grid-template-areas: 
+"boxOne"
+"boxTwo"
+"boxThree";
+}
   }
