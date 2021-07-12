@@ -50,10 +50,10 @@ li {
   
   .workGrid{
       display:grid;
-      grid-template-columns: 500px;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas:
-      "boxOne"
+      "boxOne mockupOne"
       "boxTwo"
       "boxThree";
   }
@@ -62,13 +62,18 @@ li {
        margin-left: 15%;
     
    }
+   .mockupOne {
+       grid-area: mockupOne;
+   }
    #boxTwo{
        grid-area: boxTwo;
        margin-left: 15%;
+       
    }     
    #boxThree{
        grid-area: boxThree;
        margin-left: 15px;
+    
    }
 
   .flexContainer {
